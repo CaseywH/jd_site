@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../components/layout';
 
 const Contact = () => (
-  <div>
+  <Layout>
     <h1>Contact page</h1>
     <p>hit me up Yo!</p>
-  </div>
+  </Layout>
 );
 
 export default Contact;

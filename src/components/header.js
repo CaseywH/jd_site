@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import headerStyles from './header.module.scss';
+
 const Header = () => (
   <header>
     <h1>JD</h1>
