@@ -1,0 +1,44 @@
+.container {
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.header {
+  padding: 1.25rem;
+}
+
+.subtitle {
+  margin: 0 0 0.25rem;
+
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.title {
+  margin: 0;
+
+  font-size: 1.75rem;
+}
+
+.content {
+  padding: 1.25rem;
+
+  color: #666;
+  line-height: 1.4;
+}
