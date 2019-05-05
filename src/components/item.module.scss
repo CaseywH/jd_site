@@ -26,8 +26,12 @@
   border-radius: 0.5rem;
   box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.589), 0 0 40px rgba(0, 0, 0, 0.2) inset;
   overflow: hidden;
+  transition: all 0.3s;
   @media only screen and(max-width: 800px) {
     width: 40vw;
+  }
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
