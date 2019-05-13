@@ -1,13 +1,14 @@
 .container {
-  margin-top: 5rem;
-  padding-top: 2rem;
   width: 80%;
   margin: 5rem auto 2rem auto;
+  padding: 1rem;
+  overflow: hidden scroll;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   align-content: center;
   justify-content: center;
+  z-index: 10;
   @media only screen and(max-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -22,9 +23,10 @@
 
 .card {
   background-color: whitesmoke;
-  min-width: 15rem;
+  min-width: 12rem;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.589), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.589),
+    0 0 40px rgba(0, 0, 0, 0.2) inset;
   overflow: hidden;
   transition: all 0.3s;
   @media only screen and(max-width: 800px) {

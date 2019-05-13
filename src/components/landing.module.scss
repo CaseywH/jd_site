@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.banner {
+  background: linear-gradient(#f8f5f580, #f8f5f58c),
+    url(../images/lost-co-178990-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+}
+
+.banner-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 186px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.5s;
+  &:hover {
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.548);
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: inherit;
+    height: 50px;
+    width: 372px;
+    z-index: -1;
+    transform: translateX(-280px);
+    transition: transform 400ms ease-in;
+  }
+}
