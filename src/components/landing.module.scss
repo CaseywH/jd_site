@@ -1,14 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+.icons {
+  padding: 0.2rem 0.2rem 0 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .banner {
   background: linear-gradient(#f8f5f580, #f8f5f58c),
     url(../images/lost-co-178990-unsplash.jpg) no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
-  margin: 0;
+  height: 80vh;
+  width: 90vw;
+  margin: 0 5vw 0 5vw;
   display: flex;
+  position: absolute;
+  top: 10vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: -4px 7px 19px 2px rgba(0, 0, 0, 0.21);
 }
 
 .banner-text {
