@@ -1,12 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 .icons {
-  padding: 0.2rem 0.2rem 0 0;
+  padding: 0.2rem 0.8rem 0 0;
   font-size: 2rem;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  a {
+    color: black;
+    padding-right: 0.5rem;
+  }
+  @media only screen and (max-width: 650px) {
+    justify-content: center;
+    padding: 0.2rem 0 0 0;
+    background: transparent;
+  }
 }
-.banner {
+.content {
   background: linear-gradient(#f8f5f580, #f8f5f58c),
     url(../images/lost-co-178990-unsplash.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -20,11 +29,27 @@
   align-items: center;
   justify-content: center;
   box-shadow: -4px 7px 19px 2px rgba(0, 0, 0, 0.21);
+  @media only screen and (max-width: 650px) {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: static;
+    top: 0;
+  }
+}
+.banner {
+  flex-grow: 1;
+  justify-self: center;
 }
 
 .banner-text {
+  margin-top: 30%;
   font-family: "Montserrat", sans-serif;
   font-size: 5rem;
+  text-align: center;
+  @media only screen and (max-width: 650px) {
+    font-size: 3rem;
+  }
 }
 
 .banner-nav {
@@ -32,6 +57,11 @@
   align-items: center;
   justify-content: center;
   color: black;
+  @media only screen and (max-width: 650px) {
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .btn {
