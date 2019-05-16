@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import {
+  FaFacebook, FaInstagram, FaTwitter, FaHome,
+} from 'react-icons/fa';
 import headerStyles from './header.module.scss';
 
 const Header = () => {
@@ -19,7 +21,8 @@ const Header = () => {
         <h1>
           <Link to="/" className={headerStyles.title}>{data.site.siteMetadata.title}</Link>
         </h1>
-        <nav>
+        <Link to="/" className={headerStyles.home}><FaHome /></Link>
+        <nav className={headerStyles.nav}>
           <ul className={headerStyles.navList}>
             <li>
               <Link to="/" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>home</Link>

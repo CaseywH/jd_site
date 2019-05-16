@@ -31,6 +31,7 @@ const Items = () => {
   return (
 
     <Layout>
+      <div className={itemStyles.heading}><h3>current listings reflect multiple platforms</h3></div>
       <div className={itemStyles.container}>
         {data.allContentfulProducts.edges.map(edge => (
           <Item

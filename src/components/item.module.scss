@@ -1,39 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.heading {
+  margin-top: 5rem;
+  h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+  }
+}
 .container {
   width: 80%;
-  margin: 5rem auto 2rem auto;
+  margin: 0.5rem auto 2rem auto;
   padding: 1rem;
   overflow: hidden scroll;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 250px);
   grid-gap: 2rem;
   align-content: center;
   justify-content: center;
   z-index: 10;
-  @media only screen and(max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media only screen and(max-width: 1400px) {
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 3rem;
   }
-  @media only screen and(max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media only screen and(max-width: 1050px) {
+    grid-template-columns: repeat(2, 250px);
   }
   @media only screen and(max-width: 600px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 250px;
     justify-items: center;
   }
 }
 
 .card {
   background-color: white;
-  min-width: 12rem;
-  max-width: 25rem;
   border-radius: 0.5rem;
+  width: 250px;
   border: 0.5px solid rgba(0, 0, 0, 0.11);
   overflow: hidden;
   transition: all 0.3s;
-  @media only screen and(max-width: 800px) {
-    width: 40vw;
-  }
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -62,10 +70,7 @@
 .title {
   margin: 0;
   text-align: center;
-  font-size: 1.75rem;
-  @media only screen and (max-width: 450px) {
-    font-size: 1.5rem;
-  }
+  font-size: 1.4rem;
 }
 
 .content {

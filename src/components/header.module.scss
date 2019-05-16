@@ -19,6 +19,19 @@
     }
   }
 }
+.nav {
+  @media only screen and (max-width: 400px) {
+    display: none;
+  }
+}
+
+.home {
+  font-size: 2rem;
+  color: black;
+  @media only screen and (min-width: 400px) {
+    display: none;
+  }
+}
 
 .title {
   color: #000000;
@@ -28,11 +41,15 @@
 }
 
 .nav-left {
+  padding-left: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   @media only screen and (max-width: 650px) {
     margin: 0 auto;
+  }
+  @media only screen and (min-width: 400px) {
+    justify-content: space-between;
   }
 }
 
