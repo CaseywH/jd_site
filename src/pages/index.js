@@ -5,13 +5,13 @@ import landingStyles from '../components/landing.module.scss';
 
 const IndexPage = () => (
   <div>
-
+    <div className={landingStyles.icons}>
+      <a href="www.facebook.com"><FaFacebook /></a>
+      <a href="www.instagram.com"><FaInstagram /></a>
+      <a href="www.twitter.com"><FaTwitter /></a>
+    </div>
     <div className={landingStyles.content}>
-      <div className={landingStyles.icons}>
-        <a href="www.facebook.com"><FaFacebook /></a>
-        <a href="www.instagram.com"><FaInstagram /></a>
-        <a href="www.twitter.com"><FaTwitter /></a>
-      </div>
+
       <div className={landingStyles.banner}>
         <h1 className={landingStyles.bannerText}>JD's shoppe</h1>
         <div className={landingStyles.bannerNav}>

@@ -1,0 +1,33 @@
+.content {
+  padding-top: 2rem;
+  width: 40%;
+  margin: 0 auto;
+
+  label,
+  input {
+    display: block;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+  @media only screen and(max-width: 600px) {
+    width: 80%;
+  }
+}
+
+.item {
+  padding-bottom: 1rem;
+}
+
+.submit {
+  width: 60%;
+  margin: 0 20%;
+  border: 1px solid black;
+  background: white;
+  padding: 0.5rem;
+  &:hover {
+    background: black;
+    color: white;
+  }
+}

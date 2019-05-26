@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout';
+import SuccessHero from '../components/success';
 
 
 const Success = () => (
   <Layout>
-    <h1>Success Page!</h1>
+    <SuccessHero />
   </Layout>
 );
 

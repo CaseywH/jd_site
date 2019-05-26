@@ -1,18 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 .content {
-  margin: 6rem 2rem 2rem 2rem;
+  margin: 7rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
   font-family: "Montserrat", sans-serif;
 }
+
 .heading {
   text-align: center;
   text-transform: capitalize;
 }
+.owner {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  @media only screen and(max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .text {
-  height: 450px;
-  overflow: scroll;
+  @media only screen and(max-width: 600px) {
+    text-align: center;
+  }
+}
+.image-about {
+  @media only screen and(max-width: 600px) {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
 }
