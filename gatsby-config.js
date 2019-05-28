@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'JD',
+    title: "JD's shoppe",
     author: 'Casey Heinemeyer',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {

@@ -3,9 +3,9 @@ import contactStyles from './contact.module.scss';
 
 const contact = () => (
   <div className={contactStyles.content}>
-    <form action="/success" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-      <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="contact" />
+    <h1>Contact us</h1>
+    <form action="https://formspree.io/John@btomare.com" name="contact" method="POST">
+      <input type="hidden" name="_next" value="/success" />
       <div className={contactStyles.item}>
         <label>
 Your Name:
@@ -29,8 +29,6 @@ Message:
       </div>
 
       <button className={contactStyles.submit} type="submit">Send</button>
-
-
     </form>
   </div>
 );

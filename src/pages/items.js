@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import Item from '../components/item';
 import itemStyles from '../components/item.module.scss';
+import Head from '../components/head';
 
 const Items = () => {
   const data = useStaticQuery(graphql`
@@ -31,6 +32,7 @@ const Items = () => {
   return (
 
     <Layout>
+      <Head title="Items" />
       <div className={itemStyles.heading}><h3>current listings reflect multiple platforms</h3></div>
       <div className={itemStyles.container}>
         {data.allContentfulProducts.edges.map(edge => (

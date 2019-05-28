@@ -3,8 +3,11 @@ import { Link } from 'gatsby';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import landingStyles from '../components/landing.module.scss';
 
+import Head from '../components/head';
+
 const IndexPage = () => (
   <div>
+    <Head title="Home" />
     <div className={landingStyles.icons}>
       <a href="www.facebook.com"><FaFacebook /></a>
       <a href="www.instagram.com"><FaInstagram /></a>
