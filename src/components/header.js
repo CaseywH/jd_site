@@ -30,9 +30,9 @@ const Header = () => (
       </nav>
     </div>
     <div className={headerStyles.navRight}>
-      <a href="www.facebook.com"><FaFacebook /></a>
-      <a href="www.instagram.com"><FaInstagram /></a>
-      <a href="www.twitter.com"><FaTwitter /></a>
+      <a href="www.facebook.com" target="_blank"><FaFacebook /></a>
+      <a href="www.instagram.com" target="_blank"><FaInstagram /></a>
+      <a href="www.twitter.com" target="_blank"><FaTwitter /></a>
     </div>
 
   </header>

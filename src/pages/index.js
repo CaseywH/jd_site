@@ -9,9 +9,9 @@ const IndexPage = () => (
   <div>
     <Head title="Home" />
     <div className={landingStyles.icons}>
-      <a href="www.facebook.com"><FaFacebook /></a>
-      <a href="www.instagram.com"><FaInstagram /></a>
-      <a href="www.twitter.com"><FaTwitter /></a>
+      <a href="www.facebook.com" target="_blank"><FaFacebook /></a>
+      <a href="www.instagram.com" target="_blank"><FaInstagram /></a>
+      <a href="www.twitter.com" target="_blank"><FaTwitter /></a>
     </div>
     <div className={landingStyles.content}>
 
